@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
-    private static @NonNull List<String> getStrings() {
+    private static List<String> getStrings() {
         List<String> challenges = new ArrayList<>();
         challenges.add("Device Fragmentation - making an application work on devices that can have different settings");
         challenges.add("User Experience - If the users do not like the app it will be quickly dropped on the App store");
