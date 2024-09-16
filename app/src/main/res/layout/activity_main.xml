@@ -23,16 +23,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:text="@string/ID"
+        android:textColorLink="#4CAF50"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/buttonExplicit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ButtonOne"
         android:layout_below="@id/textViewStudentID"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/ButtonOne"
+        app:rippleColor="#4CAF50" />
 
     <Button
         android:id="@+id/buttonImplicit"
@@ -40,5 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonExplicit"
         android:layout_centerHorizontal="true"
-        android:text="@string/ButtonTwo"/>
+        android:layout_marginTop="97dp"
+        android:text="@string/ButtonTwo" />
 </RelativeLayout>
