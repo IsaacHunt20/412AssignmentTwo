@@ -21,11 +21,11 @@ public class SecondActivity extends AppCompatActivity {
         Button buttonMainActivity = findViewById(R.id.buttonMainActivity);
 
         List<String> challenges = new ArrayList<>();
-        challenges.add("Challenge");
-        challenges.add("Challenge");
-        challenges.add("Challenge");
-        challenges.add("Challenge");
-        challenges.add("Challenge");
+        challenges.add("Device Fragmentation - making an application work on devices that can have different settings");
+        challenges.add("User Experience - If the users do not like the app it will be quickly dropped on the App store");
+        challenges.add("Battery Drain - The more complex the app the faster the battery usage");
+        challenges.add("Security - Since the numerous wireless connections a mobile device will have managing them can be a struggle");
+        challenges.add("Enabling Integration - Users want all apps to be intrgrable across the whole device");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, challenges);
         listView.setAdapter(adapter);
