@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonExplicit = findViewById(R.id.buttonExplicit);
         Button buttonImplicit = findViewById(R.id.buttonImplicit);
+        Button viewImageActivityButton = findViewById(R.id.view_image_activity_button);
 
         buttonExplicit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 intent.setClass(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
+        });
+
+        viewImageActivityButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -45,4 +45,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="97dp"
         android:text="@string/ButtonTwo" />
+
+    <Button
+        android:id="@+id/view_image_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonImplicit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="@string/ButtonThree"
+        app:rippleColor="#4CAF50"/>
 </RelativeLayout>
