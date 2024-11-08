@@ -43,6 +43,6 @@ dependencies {
     implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
-    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
+    androidTestImplementation(libs.uiautomator)
     androidTestImplementation(libs.espresso.core)
 }
