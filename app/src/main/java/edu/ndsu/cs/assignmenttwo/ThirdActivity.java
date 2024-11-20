@@ -1,6 +1,5 @@
 package edu.ndsu.cs.assignmenttwo;
 
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;

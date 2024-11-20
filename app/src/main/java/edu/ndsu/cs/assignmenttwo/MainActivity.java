@@ -17,23 +17,17 @@ public class MainActivity extends AppCompatActivity {
         Button buttonImplicit = findViewById(R.id.buttonImplicit);
         Button viewImageActivityButton = findViewById(R.id.view_image_activity_button);
 
-        buttonExplicit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Explicit Intent
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(intent);
-            }
+        buttonExplicit.setOnClickListener(v -> {
+            // Explicit Intent
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
         });
 
-        buttonImplicit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Implicit Intent
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setClass(MainActivity.this, SecondActivity.class);
-                startActivity(intent);
-            }
+        buttonImplicit.setOnClickListener(v -> {
+            // Implicit Intent
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setClass(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
         });
 
         viewImageActivityButton.setOnClickListener(v -> {

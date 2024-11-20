@@ -5,7 +5,11 @@
 
     <uses-feature android:name="android.hardware.camera"/>
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <permission
+        android:name="edu.ndsu.cs.assignmenttwo.permission.MSE412"
+        android:protectionLevel="dangerous"
+        android:label="Mobile Software Engineering Permission" />
+    <uses-permission android:name="edu.ndsu.cs.assignmenttwo.permission.MSE412" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,8 +26,9 @@
             android:theme="@style/Theme.AssignmentTwo" />
         <activity
             android:name=".SecondActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AssignmentTwo" />
+            android:exported="true"
+            android:theme="@style/Theme.AssignmentTwo"
+            android:permission="edu.ndsu.cs.assignmenttwo.permission.MSE412" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
